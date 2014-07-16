@@ -1,0 +1,12 @@
+{
+    "name": "netcdf",
+    "description": "D bindings to the NetCDF library",
+    "homepage": "https://github.com/John-Colvin/NetCDF",
+    "license": "NetCDF",
+
+    "targetType": "sourceLibrary",
+    "sourcePaths": ["."],
+    "importPaths": ["."],
+    
+    "libs": ["netcdf"]
+}

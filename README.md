@@ -19,3 +19,8 @@ Architectures / C compilers where C types don't comply with ```sizeof(int) == 4 
 [1] Note that the function naming has not been changed. Functions with ```long```/```ulong``` in the name take ```c_long```/```c_ulong``` as parameters, functions with (u)longlong in the name take ```long```/```ulong```.
 
 [2] Things will probably still work if you can avoid using the parts of the C API that use the offending types.
+
+
+Licence
+-------
+NetCDF uses a very liberal custom licence (see NetCDF_COPYRIGHT), which also applies to these bindings. Dub doesn't know about this license and will blindly complain that it is incompatible with everything. This does not mean it is incompatible with the other licenses you are using.

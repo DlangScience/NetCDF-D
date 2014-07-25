@@ -23,4 +23,4 @@ Architectures / C compilers where C types don't comply with ```sizeof(int) == 4 
 
 Licence
 -------
-NetCDF uses a very liberal custom licence (see NetCDF_COPYRIGHT), which also applies to these bindings. Dub doesn't know about this license and will blindly complain that it is incompatible with everything. This does not mean it is incompatible with the other licenses you are using.
+NetCDF uses a very liberal custom licence (see NetCDF_COPYRIGHT), which also applies to these bindings. Dub doesn't know about this license and may blindly complain that it is incompatible with everything. This does not necessarily mean it is incompatible with the other licenses you are using.

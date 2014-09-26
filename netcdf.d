@@ -587,7 +587,7 @@ int nc_inq_vlen(int ncid, nc_type xtype, char* name, size_t* datum_sizep,
  * data, and it will free the vlen memory. */
 int nc_free_vlen(nc_vlen_t* vl);
 
-int nc_free_vlens(size_t len, nc_vlen_t vlens[]);
+int nc_free_vlens(size_t len, nc_vlen_t* vlens);
 
 /* Put or get one element in a vlen array. */
 int nc_put_vlen_element(int ncid, int typeid1, void* vlen_element, 

@@ -5,6 +5,10 @@ d:
  - dmd-2.066.1
  - ldc-0.15.1
  - gdc
+ 
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -y libnetcdf-dev
 
 script:
-  - dub test --compiler=${DC}
+ - dub test --compiler=${DC}

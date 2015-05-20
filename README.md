@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/John-Colvin/NetCDF-D.svg?branch=master)](https://travis-ci.org/John-Colvin/NetCDF-D)
+[![Build Status](https://travis-ci.org/DlangScience/NetCDF-D.svg?branch=master)](https://travis-ci.org/DlangScience/NetCDF-D)
 NetCDF-D
 ========
 

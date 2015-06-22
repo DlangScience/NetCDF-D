@@ -8,6 +8,8 @@ Corporation for Atmospheric Research/Unidata. See \ref copyright file
 for more info.
 */
 
+module netcdf;
+
 import core.stdc.config;
 
 /*! The nc_type type is just an int. */

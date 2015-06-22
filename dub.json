@@ -4,9 +4,18 @@
     "homepage": "https://github.com/John-Colvin/NetCDF-D",
     "license": "NetCDF",
 
-    "targetType": "sourceLibrary",
     "sourcePaths": ["."],
     "importPaths": ["."],
     
-    "libs": ["netcdf"]
+    "configurations": [
+        {
+            "name": "default",
+            "targetType": "sourceLibrary",
+            "libs": ["netcdf"]
+        },
+        {
+            "name": "docs",
+            "targetType": "library"
+        }
+    ]
 }

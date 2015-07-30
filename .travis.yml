@@ -1,3 +1,5 @@
+sudo: false
+
 language: d
 
 d:
@@ -6,9 +8,7 @@ d:
  - ldc-0.15.1
  - gdc
  
-before_install:
- - sudo apt-get update -qq
- - sudo apt-get install -y libnetcdf-dev
-
-script:
- - dub test --compiler=${DC}
+addons:
+  apt:
+    packages:
+      - libblas-dev

@@ -11,4 +11,4 @@ d:
 addons:
   apt:
     packages:
-      - libblas-dev
+      - libnetcdf-dev

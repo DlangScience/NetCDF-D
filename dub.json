@@ -4,9 +4,6 @@
     "homepage": "https://github.com/John-Colvin/NetCDF-D",
     "license": "NetCDF",
 
-    "sourcePaths": ["."],
-    "importPaths": ["."],
-    
     "configurations": [
         {
             "name": "default",

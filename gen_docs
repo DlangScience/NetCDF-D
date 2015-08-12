@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-dub build --config=docs --build=ddox
-rm -rf site/api
-mv docs site/api

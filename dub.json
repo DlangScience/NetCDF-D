@@ -3,18 +3,8 @@
     "description": "D bindings to the NetCDF library",
     "homepage": "https://github.com/John-Colvin/NetCDF-D",
     "license": "NetCDF",
-
-    "configurations": [
-        {
-            "name": "default",
-            "targetType": "sourceLibrary",
-            "libs": ["netcdf"]
-        },
-        {
-            "name": "docs",
-            "targetType": "library"
-        }
-    ],
+    
+    "libs": ["netcdf"],
     
     "buildTypes": {
         "DSddox": {

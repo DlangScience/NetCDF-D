@@ -48,9 +48,10 @@ jobs:
 
     - name: 'Build & Test'
       run: |
+        export PATH=$PATH:`pwd` # for GDC build
         # Build the project, with its main file included, without unittests
         dub build --compiler=$DC
         # Build and run tests, as defined by `unittest` configuration
         # In this mode, `mainSourceFile` is excluded and `version (unittest)` are included
         # See https://dub.pm/package-format-json.html#configurations
-        PATH=$PATH:`pwd` dub test --compiler=$DC
+        dub test --compiler=$DC

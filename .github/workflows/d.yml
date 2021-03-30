@@ -28,7 +28,7 @@ jobs:
 
     - name: setup macos
       if: matrix.os == 'macos-latest'
-      run: brew install brew install homebrew/science/netcdf
+      run: brew install brew install netcdf
 
     - name: 'Build & Test'
       run: |

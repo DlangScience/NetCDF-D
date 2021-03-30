@@ -20,6 +20,7 @@ jobs:
         include:
           - os: ubuntu-latest
             dc: gdc
+            
 
     steps:
     - uses: actions/checkout@v2
@@ -29,10 +30,13 @@ jobs:
       uses: dlang-community/setup-dlang@v1
       with:
         compiler: ${{ matrix.dc }}
-    
+
     - name: Install GDC
       if: matrix.dc == 'gdc'
-      run: sudo apt install gdc
+      run: |
+        sudo apt install gdc
+        wget https://github.com/dlang/dub/releases/download/v1.23.0/dub-v1.23.0-linux-x86_64.tar.gz
+        tar xvf dub-v1.23.0-linux-x86_64.tar.gz
 
     - name: setup ubuntu
       if: matrix.os == 'ubuntu-latest'
@@ -49,4 +53,4 @@ jobs:
         # Build and run tests, as defined by `unittest` configuration
         # In this mode, `mainSourceFile` is excluded and `version (unittest)` are included
         # See https://dub.pm/package-format-json.html#configurations
-        dub test --compiler=$DC
+        PATH=$PATH:`pwd` dub test --compiler=$DC
